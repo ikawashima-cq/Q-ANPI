@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">みちびき避難所</string>
+
+    <!-- 送信ダイアログ -->
+    <string name="send_dialog_title">安否登録情報送信</string>
+    <string name="send_dialog_ip">IP</string>
+    <string name="send_dialog_port">Port</string>
+    <string name="send_dialog_positive_btn">送信</string>
+    <string name="send_dialog_negative_btn">キャンセル</string>
+
+    <!--送信中ダイアログ-->
+    <string name="send_now_dialog_title">安否登録情報送信中...</string>
+    <string name="send_now_dialog_message">送信中</string>
+
+    <!--入力エラーダイアログ-->
+    <string name="input_error_dialog_title">エラー</string>
+    <string name="input_error_dialog_positive_btn">OK</string>
+
+    <!--送信エラーダイアログ-->
+    <string name="send_error_dialog_title">送信エラー</string>
+    <string name="send_error_dialog_negative_btn">OK</string>
+    <string name="send_error_ip_port">正しい情報を入力してください</string>
+
+    <!--送信完了ダイアログ-->
+    <string name="send_complete_dialog_title">送信完了</string>
+    <string name="send_complete_dialog_message">送信完了しました。</string>
+    <string name="send_complete_dialog_negative_btn">OK</string>
+
+    <!-- 下線表示用 -->
+    <string name="publish_message_title"><u>安否情報の公開可否について</u></string>
+    <string name="privacy_policy"><u>プライバシーポリシー</u></string>
+
+</resources>

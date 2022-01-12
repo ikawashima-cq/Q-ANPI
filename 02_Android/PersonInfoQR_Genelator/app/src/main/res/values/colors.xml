@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#000080</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorTransparent">#00000000</color>
+    <!-- 項目 -->
+    <color name="colorItemRequired">#EC3C1A</color>
+    <color name="colorItemExample">#555555</color>
+    <!-- ラジオボタン -->
+    <color name="colorSelectButton">#f8f8ff</color>
+    <color name="colorSelectButtonBorder">#ccc</color>
+    <!-- 任意項目表示ボタン -->
+    <color name="colorButtonFace">#f0f0f0</color>
+    <!-- 標準ボタン -->
+    <color name="colorStandardButton">#0080ff</color>
+    <color name="colorStandardButtonInactive">#A4A4A4</color>
+    <!-- 戻るボタン -->
+    <color name="colorBackButton">#B2D0FF</color>
+    <!-- QRコード背景 -->
+    <color name="colorQRBack">#ffe698</color>
+
+</resources>

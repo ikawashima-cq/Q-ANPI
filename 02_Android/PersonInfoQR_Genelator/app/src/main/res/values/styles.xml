@@ -1,0 +1,221 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Activity</item>
+        <item name="android:editTextStyle">@style/EditText</item>
+    </style>
+
+    <!-- EditTextのスタイル -->
+    <style name="EditText" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/round_corners</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="colorControlActivated">@color/colorTransparent</item>
+    </style>
+
+    <!-- 半透明背景設定 -->
+    <drawable name="transparameter">#7f000000</drawable>
+    <style name="Theme.DialogBackground" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/transparameter</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="InputText">
+        <item name="android:textColor">@android:color/background_dark</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:background">@android:drawable/editbox_background</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textColorHint">@android:color/tertiary_text_light</item>
+    </style>
+
+    <style name="InputTextTitle">
+        <item name="android:textColor">@android:color/background_dark</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="InputTextTitleEnglish">
+        <item name="android:textColor">@android:color/background_dark</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="InputTextCaution">
+        <item name="android:textColor">@android:color/background_dark</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="InputTextMessage">
+        <item name="android:textColor">@android:color/background_dark</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="InputTextPrivacyPolicy">
+        <item name="android:textColor">@android:color/background_dark</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:onClick">onPrivacyPolicyText</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">18dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+
+    <style name="InputItem">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:background">@drawable/item_style</item>
+    </style>
+
+    <style name="InputItemBorder">
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:height">10dp</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="InputButtonLine">
+        <item name="android:gravity">right</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:weightSum">1</item>
+    </style>
+
+    <!-- ラジオボタン -->
+    <style name="RadioButtonStart">
+        <item name="android:textColor">@android:color/background_dark</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:background">@drawable/button_start_style</item>
+        <item name="android:gravity">center</item>
+        <item name="android:onClick">onButtonClick</item>
+    </style>
+    <style name="RadioButtonMiddle">
+        <item name="android:textColor">@android:color/background_dark</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:background">@drawable/button_middle_style</item>
+        <item name="android:gravity">center</item>
+        <item name="android:onClick">onButtonClick</item>
+    </style>
+    <style name="RadioButtonEnd">
+        <item name="android:textColor">@android:color/background_dark</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:background">@drawable/button_end_style</item>
+        <item name="android:gravity">center</item>
+        <item name="android:onClick">onButtonClick</item>
+    </style>
+    <!-- 任意項目表示ボタン -->
+    <style name="AnyItemButton">
+        <item name="android:textColor">@android:color/background_dark</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@drawable/button_any_item</item>
+        <item name="android:gravity">center</item>
+        <item name="android:onClick">onButtonClick</item>
+    </style>
+    <!-- 標準ボタン -->
+    <style name="StandardButton">
+        <item name="android:background">@drawable/button_standard</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:onClick">onButtonClick</item>
+    </style>
+    <!-- クリアボタン -->
+    <style name="ClearButton">
+        <item name="android:background">@drawable/button_clear</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:onClick">onButtonClick</item>
+    </style>
+    <!-- 戻るボタン -->
+    <style name="BackButton">
+        <item name="android:background">@drawable/button_back</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:onClick">onButtonClick</item>
+    </style>
+    <!-- 生年月日入力欄のスタイル -->
+    <style name="InputBirthText">
+        <item name="android:background">@drawable/round_corners</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:gravity">right</item>
+        <item name="colorControlActivated">@color/colorTransparent</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="NumberPickerStyle">
+        <item name="colorControlNormal">@android:color/black</item>
+        <item name="android:textSize">18sp</item>
+    </style>>
+    <!--暗号化有無のチェックボックス-->
+    <style name="CheckboxStyle" parent="AppTheme">
+        <!-- 枠線 -->
+        <item name="colorControlNormal">@android:color/black</item>
+    </style>
+
+    <style name="QRItem" parent="InputItem">
+        <item name="android:background">@drawable/qr_style</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="QRCodeView">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">200dp</item>
+    </style>
+
+    <style name="GenelateTextTitle">
+        <item name="android:textColor">@android:color/background_dark</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="GenelateTextItem">
+        <item name="android:textColor">@android:color/background_dark</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>>
+    </style>
+
+    <style name="GenelateTextItemParam">
+        <item name="android:textColor">@android:color/background_dark</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="Animation" parent="android:Animation" />
+    <style name="Animation.Activity" parent="android:Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:activityOpenExitAnimation">@android:anim/fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@android:anim/fade_out</item>
+    </style>
+</resources>

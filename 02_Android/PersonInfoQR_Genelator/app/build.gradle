@@ -1,0 +1,77 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "28.0.3"
+    defaultConfig {
+        applicationId "com.nec.android.qzss.QZSSShelter"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        externalNativeBuild {
+            cmake {
+                cppFlags "-fexceptions"
+                abiFilters 'arm64-v8a', 'armeabi-v7a', 'x86', 'x86_64'
+                targets 'jniBlowfish'
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+    sourceSets {
+        main {
+            jni.srcDirs = []
+            jniLibs.srcDirs = ['src/main/libs', 'src/main/jniLibs']
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    productFlavors {
+    }
+    //add for APK
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+                def newName = "QZSSShelter.apk"
+                outputFileName = newName
+        }
+    }
+}
+
+repositories{
+    flatDir{
+        dirs 'libs'
+    }
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //compile fileTree(include: ['*.aar'], dir: 'libs')
+    //compile files('libs/zxing-android-embedded-3.5.0.aar')
+    implementation(name:'zxing-android-embedded-3.5.0', ext:'aar')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.android.support:appcompat-v7:26.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    //compile 'com.journeyapps:zxing-android-embedded:3.5.0@aar'
+    //compile 'com.google.zxing:core:3.3.0'
+    implementation 'com.android.support:design:26.0.0'
+    implementation 'com.android.support:support-v4:26.0.0'
+//    compile files('libs/mysql-connector-java-3.0.17-ga-bin.jar')
+    testImplementation 'junit:junit:4.12'
+}
+

@@ -1,0 +1,1148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jp.co.nec.personinfoqrGenelator.MainActivity"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="585dp"
+        android:layout_height="873dp"
+        android:background="@android:color/background_light"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <ScrollView
+            android:id="@+id/input_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:scrollbarAlwaysDrawVerticalTrack="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="0dp">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/background_light"
+                        app:srcCompat="@drawable/qzss_logo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:text="個人安否登録"
+                        android:textColor="@android:color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                    <Button
+                        android:id="@+id/btn_clear"
+                        style="@style/ClearButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="クリア" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.48"
+                    android:orientation="vertical"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.04"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/layout_caution"
+                        style="@style/InputItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/item_style"
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <Button
+                            android:id="@+id/btn_last_registered_info"
+                            style="@style/StandardButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:enabled="false"
+                            android:text="前回登録情報" />
+
+                        <LinearLayout
+                            style="@style/InputItemBorder"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"></LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_id"
+                        style="@style/InputItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/item_style"
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/InputTextTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10sp"
+                                    android:text="電話番号" />
+
+                                <TextView
+                                    style="@style/InputTextTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="13sp"
+                                    android:text="*必須"
+                                    android:textColor="@color/colorItemRequired" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/InputTextTitleEnglish"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10sp"
+                                    android:text="Phone number" />
+
+                                <TextView
+                                    style="@style/InputTextTitleEnglish"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="[required]"
+                                    android:textColor="@color/colorItemRequired" />
+                            </LinearLayout>
+
+                            <EditText
+                                style="@style/EditText"
+                                android:id="@+id/input_txt_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLength="12"
+                                android:inputType="number" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/InputItemBorder"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"></LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_name"
+                        style="@style/InputItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/item_style"
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/InputTextTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10sp"
+                                    android:text="姓" />
+
+                                <TextView
+                                    style="@style/InputTextTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="13sp"
+                                    android:text="*必須"
+                                    android:textColor="@color/colorItemRequired" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/InputTextTitleEnglish"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10sp"
+                                    android:text="Family name" />
+
+                                <TextView
+                                    style="@style/InputTextTitleEnglish"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="[required]"
+                                    android:textColor="@color/colorItemRequired" />
+                            </LinearLayout>
+
+                            <EditText
+                                style="@style/EditText"
+                                android:id="@+id/input_txt_family_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLength="12"
+                                android:inputType="textMultiLine" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/InputItemBorder"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"></LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_given_name"
+                        style="@style/InputItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/item_style"
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/InputTextTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10sp"
+                                    android:text="名" />
+
+                                <TextView
+                                    style="@style/InputTextTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="13sp"
+                                    android:text="*必須"
+                                    android:textColor="@color/colorItemRequired" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/InputTextTitleEnglish"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10sp"
+                                    android:text="Given name" />
+
+                                <TextView
+                                    style="@style/InputTextTitleEnglish"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="[required]"
+                                    android:textColor="@color/colorItemRequired" />
+                            </LinearLayout>
+
+                            <EditText
+                                style="@style/EditText"
+                                android:id="@+id/input_txt_given_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLength="12"
+                                android:inputType="textMultiLine" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/InputItemBorder"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"></LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_age"
+                        style="@style/InputItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/item_style"
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/InputTextTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10sp"
+                                    android:text="生年月日" />
+
+                                <TextView
+                                    style="@style/InputTextTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="13sp"
+                                    android:text="*必須"
+                                    android:textColor="@color/colorItemRequired" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/InputTextTitleEnglish"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10sp"
+                                    android:text="Date of birth" />
+
+                                <TextView
+                                    style="@style/InputTextTitleEnglish"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="[required]"
+                                    android:textColor="@color/colorItemRequired" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    style="@style/InputTextTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:text="西暦"/>
+                                <TextView
+                                    style="@style/InputBirthText"
+                                    android:onClick="onButtonClick"
+                                    android:clickable="true"
+                                    android:id="@+id/input_num_birth_year"
+                                    android:textAlignment="center"
+                                    android:layout_width="56sp"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    style="@style/InputTextTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="年"/>
+                                <TextView
+                                    style="@style/InputBirthText"
+                                    android:onClick="onButtonClick"
+                                    android:clickable="true"
+                                    android:id="@+id/input_num_birth_month"
+                                    android:textAlignment="center"
+                                    android:layout_width="36sp"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    style="@style/InputTextTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="月"/>
+                                <TextView
+                                    style="@style/InputBirthText"
+                                    android:onClick="onButtonClick"
+                                    android:clickable="true"
+                                    android:id="@+id/input_num_birth_day"
+                                    android:textAlignment="center"
+                                    android:layout_width="36sp"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    style="@style/InputTextTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="日"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/InputItemBorder"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"></LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_sex"
+                        style="@style/InputItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/item_style"
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/InputTextTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10sp"
+                                    android:text="性別" />
+
+                                <TextView
+                                    style="@style/InputTextTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="13sp"
+                                    android:text="*必須"
+                                    android:textColor="@color/colorItemRequired" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/InputTextTitleEnglish"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10sp"
+                                    android:text="Sex" />
+
+                                <TextView
+                                    style="@style/InputTextTitleEnglish"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="[required]"
+                                    android:textColor="@color/colorItemRequired" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                style="@style/InputButtonLine"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical|center_horizontal|center"
+                                android:orientation="horizontal">
+
+                                <RadioGroup
+                                    android:id="@+id/input_select_sex"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:weightSum="2">
+
+                                    <RadioButton
+                                        android:id="@+id/input_selbtn_sex_0"
+                                        style="@style/RadioButtonStart"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center|left"
+                                        android:text="男性：Male" />
+
+                                    <RadioButton
+                                        android:id="@+id/input_selbtn_sex_1"
+                                        style="@style/RadioButtonEnd"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center|left"
+                                        android:text="女性：Female" />
+                                </RadioGroup>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/InputItemBorder"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_enter"
+                        style="@style/InputItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/item_style"
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/InputTextTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10sp"
+                                    android:text="入所/退所/在宅" />
+
+                                <TextView
+                                    style="@style/InputTextTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="13sp"
+                                    android:text="*必須"
+                                    android:textColor="@color/colorItemRequired" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                style="@style/InputButtonLine"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical|center_horizontal|center"
+                                android:orientation="horizontal">
+
+                                <RadioGroup
+                                    android:id="@+id/input_select_enter"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:weightSum="3">
+
+                                    <RadioButton
+                                        android:id="@+id/input_selbtn_enter_0"
+                                        style="@style/RadioButtonStart"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center|left"
+                                        android:text="避難所への入所" />
+
+                                    <RadioButton
+                                        android:id="@+id/input_selbtn_enter_1"
+                                        style="@style/RadioButtonMiddle"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center|left"
+                                        android:text="避難所からの退所" />
+                                    <RadioButton
+                                        android:id="@+id/input_selbtn_enter_2"
+                                        style="@style/RadioButtonEnd"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center|left"
+                                        android:text="在宅避難\n（支援は受けるが自宅で\n　　　　　　寝泊まりする）" />
+                                </RadioGroup>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/InputItemBorder"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_publish"
+                        style="@style/InputItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/item_style"
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/InputTextTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10sp"
+                                    android:text="安否情報の公表可否" />
+
+                                <TextView
+                                    style="@style/InputTextTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="13sp"
+                                    android:text="*必須"
+                                    android:textColor="@color/colorItemRequired" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                style="@style/InputButtonLine"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical|center_horizontal|center"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal">
+
+                                <RadioGroup
+                                    android:id="@+id/input_select_publish"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:weightSum="2">
+
+                                    <RadioButton
+                                        android:id="@+id/input_selbtn_publish_1"
+                                        style="@style/RadioButtonStart"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center|left"
+                                        android:text="許可" />
+
+                                    <RadioButton
+                                        android:id="@+id/input_selbtn_publish_0"
+                                        style="@style/RadioButtonEnd"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center|left"
+                                        android:text="拒否" />
+                                </RadioGroup>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/InputTextMessage"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/publish_message_title" />
+
+                                <TextView
+                                    style="@style/InputTextMessage"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="許可を選択すると避難者が避難していた(または避難している)避難所を近親者が調べることができます。\n公開される情報は、必須項目の「電話番号」と任意項目の「怪我の有無」「介護要否」「障がいの有無」「妊産婦」と避難所の情報です。\n安否情報の公開に同意いただける場合は許可を選択してください。" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/InputItemBorder"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal">
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/InputTextTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="任意項目表示"/>
+                        <Button
+                            android:id="@+id/input_btn_essential"
+                            style="@style/AnyItemButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="▼" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/InputItemBorder"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal">
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_address"
+                        style="@style/InputItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/item_style"
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/InputTextTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="住所" />
+                            <EditText
+                                style="@style/EditText"
+                                android:id="@+id/input_txt_address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLength="64"
+                                android:inputType="textMultiLine" />
+                        </LinearLayout>
+                        <LinearLayout
+                            style="@style/InputItemBorder"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_injury"
+                        style="@style/InputItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/item_style"
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/InputTextTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10sp"
+                                android:text="怪我の有無" />
+
+                            <LinearLayout
+                                style="@style/InputButtonLine"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical|center_horizontal|center"
+                                android:orientation="horizontal">
+
+                                <RadioGroup
+                                    android:id="@+id/input_select_injury"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:weightSum="2">
+
+                                    <RadioButton
+                                        android:id="@+id/input_selbtn_injury_0"
+                                        style="@style/RadioButtonEnd"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center|left"
+                                        android:text="無し" />
+
+                                    <RadioButton
+                                        android:id="@+id/input_selbtn_injury_1"
+                                        style="@style/RadioButtonStart"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center|left"
+                                        android:text="有り" />
+
+                                </RadioGroup>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/InputItemBorder"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_care"
+                        style="@style/InputItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/item_style"
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+                            <TextView
+                                style="@style/InputTextTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10sp"
+                                android:text="介護要否" />
+
+                            <LinearLayout
+                                style="@style/InputButtonLine"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical|center_horizontal|center"
+                                android:orientation="horizontal">
+
+                                <RadioGroup
+                                    android:id="@+id/input_select_care"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:weightSum="2">
+
+                                    <RadioButton
+                                        android:id="@+id/input_selbtn_care_0"
+                                        style="@style/RadioButtonEnd"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center|left"
+                                        android:text="不要" />
+
+                                    <RadioButton
+                                        android:id="@+id/input_selbtn_care_1"
+                                        style="@style/RadioButtonStart"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center|left"
+                                        android:text="必要" />
+
+                                </RadioGroup>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/InputItemBorder"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_disability"
+                        style="@style/InputItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/item_style"
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+                            <TextView
+                                style="@style/InputTextTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10sp"
+                                android:text="障がいの有無" />
+
+                            <LinearLayout
+                                style="@style/InputButtonLine"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical|center_horizontal|center"
+                                android:orientation="horizontal">
+
+                                <RadioGroup
+                                    android:id="@+id/input_select_disability"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:weightSum="2">
+
+                                    <RadioButton
+                                        android:id="@+id/input_selbtn_disability_0"
+                                        style="@style/RadioButtonEnd"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center|left"
+                                        android:text="無し" />
+
+                                    <RadioButton
+                                        android:id="@+id/input_selbtn_disability_1"
+                                        style="@style/RadioButtonStart"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center|left"
+                                        android:text="有り" />
+                                </RadioGroup>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/InputItemBorder"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_expectant"
+                        style="@style/InputItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/item_style"
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+                            <TextView
+                                style="@style/InputTextTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10sp"
+                                android:text="妊産婦" />
+
+                            <LinearLayout
+                                style="@style/InputButtonLine"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical|center_horizontal|center"
+                                android:orientation="horizontal">
+
+                                <RadioGroup
+                                    android:id="@+id/input_select_expectant"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:weightSum="2">
+
+                                    <RadioButton
+                                        android:id="@+id/input_selbtn_expectant_0"
+                                        style="@style/RadioButtonEnd"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center|left"
+                                        android:text="いいえ" />
+
+                                    <RadioButton
+                                        android:id="@+id/input_selbtn_expectant_1"
+                                        style="@style/RadioButtonStart"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center|left"
+                                        android:text="はい" />
+                                </RadioGroup>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/InputItemBorder"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal">
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/InputItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/item_style"
+                        android:gravity="right"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+                            <CheckBox
+                                android:id="@+id/is_encryption"
+                                android:theme="@style/CheckboxStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="暗号化してQRコードに変換"
+                                android:textColor="@android:color/background_dark"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            style="@style/InputItemBorder"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal">
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/btn_next"
+                            style="@style/StandardButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="内容確認：Confirmation" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/InputTextPrivacyPolicy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/privacy_policy" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

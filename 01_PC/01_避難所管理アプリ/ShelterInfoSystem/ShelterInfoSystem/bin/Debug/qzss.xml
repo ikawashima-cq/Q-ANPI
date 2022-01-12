@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- 現在未使用 -->
+<!-- 
+  <SettingInfo>
+    <PostURL>http://app.qzss.go.jp/Q-ANPI/shelter/view/receiver.php</PostURL>
+    <GetURL>http://app.qzss.go.jp/Q-ANPI/shelter/view/getfeature.php</GetURL>
+    <RetryCount>2</RetryCount>
+    <TimeOut>20</TimeOut>
+   <CycleFeature>1</CycleFeature>
+   <LocalURL>http://192.168.0.3/Q-ANPI/shelter/pc/registration/index.html</LocalURL>
+   <TimeSync>60</TimeSync>
+  </SettingInfo>
+-->
+<!-- 現在未使用 -->

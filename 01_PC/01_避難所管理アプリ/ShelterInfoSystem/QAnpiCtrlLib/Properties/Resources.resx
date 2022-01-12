@@ -1,0 +1,1380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="W_common_btn_nam_001" xml:space="preserve">
+    <value>Ｓ帯モニタ端末 制御ツール 起動</value>
+  </data>
+  <data name="W_common_btn_nam_002" xml:space="preserve">
+    <value>疑似地上局 制御ツール 起動</value>
+  </data>
+  <data name="W_common_btn_nam_003" xml:space="preserve">
+    <value>接続</value>
+  </data>
+  <data name="W_common_btn_nam_004" xml:space="preserve">
+    <value>切断</value>
+  </data>
+  <data name="W_common_btn_nam_005" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="W_common_btn_nam_006" xml:space="preserve">
+    <value>送信</value>
+  </data>
+  <data name="W_common_btn_nam_007" xml:space="preserve">
+    <value>送信停止</value>
+  </data>
+  <data name="W_common_btn_nam_008" xml:space="preserve">
+    <value>読出</value>
+  </data>
+  <data name="W_common_btn_nam_009" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="W_common_btn_nam_010" xml:space="preserve">
+    <value>クリア</value>
+  </data>
+  <data name="W_common_btn_nam_011" xml:space="preserve">
+    <value>保存先指定</value>
+  </data>
+  <data name="W_common_btn_nam_012" xml:space="preserve">
+    <value>保存（開始）</value>
+  </data>
+  <data name="W_common_btn_nam_013" xml:space="preserve">
+    <value>保存（停止）</value>
+  </data>
+  <data name="W_common_btn_nam_014" xml:space="preserve">
+    <value>スクロール（再開）</value>
+  </data>
+  <data name="W_common_btn_nam_015" xml:space="preserve">
+    <value>スクロール（一時停止）</value>
+  </data>
+  <data name="W_common_btn_nam_016" xml:space="preserve">
+    <value>周期送信（開始）</value>
+  </data>
+  <data name="W_common_btn_nam_017" xml:space="preserve">
+    <value>周期送信（停止）</value>
+  </data>
+  <data name="W_common_btn_nam_018" xml:space="preserve">
+    <value>詳細表示</value>
+  </data>
+  <data name="W_common_btn_nam_019" xml:space="preserve">
+    <value>計算</value>
+  </data>
+  <data name="W_common_btn_nam_020" xml:space="preserve">
+    <value>テキスト分割</value>
+  </data>
+  <data name="W_common_btn_nam_021" xml:space="preserve">
+    <value>疑似安否確認SS 制御ツール 起動</value>
+  </data>
+  <data name="W_common_btn_nam_022" xml:space="preserve">
+    <value>CSV読出</value>
+  </data>
+  <data name="W_common_btn_nam_023" xml:space="preserve">
+    <value>XML読出</value>
+  </data>
+  <data name="W_common_btn_nam_024" xml:space="preserve">
+    <value>周期設定（開始）</value>
+  </data>
+  <data name="W_common_btn_nam_025" xml:space="preserve">
+    <value>周期設定（終了）</value>
+  </data>
+  <data name="W_common_btn_nam_026" xml:space="preserve">
+    <value>読出データ送信</value>
+  </data>
+  <data name="W_common_btn_nam_027" xml:space="preserve">
+    <value>固定データ送信</value>
+  </data>
+  <data name="W_common_btn_nam_028" xml:space="preserve">
+    <value>Ｓ帯モニタ端末 制御ツール 起動</value>
+  </data>
+  <data name="W_common_btn_nam_029" xml:space="preserve">
+    <value>全接続</value>
+  </data>
+  <data name="W_common_btn_nam_030" xml:space="preserve">
+    <value>全切断</value>
+  </data>
+  <data name="W_common_btn_nam_031" xml:space="preserve">
+    <value>エンコード／保存</value>
+  </data>
+  <data name="W_common_btn_nam_032" xml:space="preserve">
+    <value>現時刻+30秒</value>
+  </data>
+  <data name="W_common_btn_nam_033" xml:space="preserve">
+    <value>回線試験データ 周期送信（開始）</value>
+  </data>
+  <data name="W_common_btn_nam_034" xml:space="preserve">
+    <value>回線試験データ 周期送信（停止）</value>
+  </data>
+  <data name="W_common_btn_nam_035" xml:space="preserve">
+    <value>設備ステータス 周期送信（開始）</value>
+  </data>
+  <data name="W_common_btn_nam_036" xml:space="preserve">
+    <value>設備ステータス 周期送信（停止）</value>
+  </data>
+  <data name="W_common_dat_ttl_001" xml:space="preserve">
+    <value>ユーザ情報</value>
+  </data>
+  <data name="W_common_dat_ttl_002" xml:space="preserve">
+    <value>ユーザーＩＤ:</value>
+  </data>
+  <data name="W_common_dat_ttl_003" xml:space="preserve">
+    <value>位置情報(degree)</value>
+  </data>
+  <data name="W_common_dat_ttl_004" xml:space="preserve">
+    <value>緯度:</value>
+  </data>
+  <data name="W_common_dat_ttl_005" xml:space="preserve">
+    <value>経度:</value>
+  </data>
+  <data name="W_common_dat_ttl_006" xml:space="preserve">
+    <value>試験</value>
+  </data>
+  <data name="W_common_dat_ttl_007" xml:space="preserve">
+    <value>SeqNo.:</value>
+  </data>
+  <data name="W_common_dat_ttl_008" xml:space="preserve">
+    <value>最終SeqNo.：</value>
+  </data>
+  <data name="W_common_dat_ttl_009" xml:space="preserve">
+    <value>メッセージ送信 タイムスロット／開始時刻</value>
+  </data>
+  <data name="W_common_dat_ttl_010" xml:space="preserve">
+    <value>周波数:</value>
+  </data>
+  <data name="W_common_dat_ttl_011" xml:space="preserve">
+    <value>ＰＮ符号数:</value>
+  </data>
+  <data name="W_common_dat_ttl_012" xml:space="preserve">
+    <value>送信開始時刻：</value>
+  </data>
+  <data name="W_common_dat_ttl_013" xml:space="preserve">
+    <value>送信開始ﾀｲﾐﾝｸﾞ:</value>
+  </data>
+  <data name="W_common_dat_ttl_014" xml:space="preserve">
+    <value>秒後</value>
+  </data>
+  <data name="W_common_dat_ttl_015" xml:space="preserve">
+    <value>結果</value>
+  </data>
+  <data name="W_common_dat_ttl_016" xml:space="preserve">
+    <value>送信</value>
+  </data>
+  <data name="W_common_dat_ttl_017" xml:space="preserve">
+    <value>受信</value>
+  </data>
+  <data name="W_common_dat_ttl_018" xml:space="preserve">
+    <value>(</value>
+  </data>
+  <data name="W_common_dat_ttl_019" xml:space="preserve">
+    <value>)</value>
+  </data>
+  <data name="W_common_dat_ttl_020" xml:space="preserve">
+    <value>ユーザーID</value>
+  </data>
+  <data name="W_common_dat_ttl_021" xml:space="preserve">
+    <value>回線試験データ：</value>
+  </data>
+  <data name="W_common_dat_ttl_022" xml:space="preserve">
+    <value>設備ステータス：</value>
+  </data>
+  <data name="W_common_frm_ttl_001" xml:space="preserve">
+    <value>衛星安否確認サービス　制御ツール                          Ver 1.00</value>
+  </data>
+  <data name="W_common_frm_ttl_002" xml:space="preserve">
+    <value>衛星安否確認サービス　制御ツール（Ｓ帯モニタ端末）     Ver 1.00</value>
+  </data>
+  <data name="W_common_frm_ttl_003" xml:space="preserve">
+    <value>衛星安否確認サービス　制御ツール（疑似地上局）            Ver 1.00</value>
+  </data>
+  <data name="W_common_frm_ttl_004" xml:space="preserve">
+    <value>衛星安否確認サービス　制御ツール（疑似安否確認SS）      Ver 1.00</value>
+  </data>
+  <data name="W_common_gid_nam_001" xml:space="preserve">
+    <value>(000000001～268435455)</value>
+  </data>
+  <data name="W_common_gid_nam_002" xml:space="preserve">
+    <value>(0～90.0000 )</value>
+  </data>
+  <data name="W_common_gid_nam_003" xml:space="preserve">
+    <value>(90～180.0000)</value>
+  </data>
+  <data name="W_common_gid_nam_004" xml:space="preserve">
+    <value>(0～300)</value>
+  </data>
+  <data name="W_common_gid_nam_005" xml:space="preserve">
+    <value>接続先の端末へ制御ＰＣの時刻を設定する。</value>
+  </data>
+  <data name="W_common_gid_nam_006" xml:space="preserve">
+    <value>接続先の端末へＧＰＳチップのＯｎ／Ｏｆｆを設定する。</value>
+  </data>
+  <data name="W_common_gid_nam_007" xml:space="preserve">
+    <value>接続先の端末へ位置情報を設定する。</value>
+  </data>
+  <data name="W_common_gid_nam_008" xml:space="preserve">
+    <value>Ｏｎ</value>
+  </data>
+  <data name="W_common_gid_nam_009" xml:space="preserve">
+    <value>Ｏｆｆ</value>
+  </data>
+  <data name="W_common_gid_nam_010" xml:space="preserve">
+    <value>メッセージファイル（ＸＭＬ）</value>
+  </data>
+  <data name="W_common_gid_nam_011" xml:space="preserve">
+    <value>メッセージタイプ</value>
+  </data>
+  <data name="W_common_gid_nam_012" xml:space="preserve">
+    <value>読出したメッセージのデータ値を整合</value>
+  </data>
+  <data name="W_common_gid_nam_013" xml:space="preserve">
+    <value>１０１</value>
+  </data>
+  <data name="W_common_gid_nam_014" xml:space="preserve">
+    <value>１０２</value>
+  </data>
+  <data name="W_common_gid_nam_015" xml:space="preserve">
+    <value>１３０</value>
+  </data>
+  <data name="W_common_gid_nam_016" xml:space="preserve">
+    <value>１５０</value>
+  </data>
+  <data name="W_common_gid_nam_017" xml:space="preserve">
+    <value>２５５</value>
+  </data>
+  <data name="W_common_gid_nam_018" xml:space="preserve">
+    <value>データ個数整合</value>
+  </data>
+  <data name="W_common_gid_nam_019" xml:space="preserve">
+    <value>メッセージ長整合</value>
+  </data>
+  <data name="W_common_gid_nam_020" xml:space="preserve">
+    <value>送信経路</value>
+  </data>
+  <data name="W_common_gid_nam_021" xml:space="preserve">
+    <value>Ｓ帯モニタ監視ステータス</value>
+  </data>
+  <data name="W_common_gid_nam_022" xml:space="preserve">
+    <value>設備ステータス</value>
+  </data>
+  <data name="W_common_gid_nam_023" xml:space="preserve">
+    <value>回線試験データ</value>
+  </data>
+  <data name="W_common_gid_nam_024" xml:space="preserve">
+    <value>Ｓ帯モニタデータ（FWD）</value>
+  </data>
+  <data name="W_common_gid_nam_025" xml:space="preserve">
+    <value>Ｓ帯FWDデータ取得要求</value>
+  </data>
+  <data name="W_common_gid_nam_026" xml:space="preserve">
+    <value>Ｓ帯モニタデータ（RTN）</value>
+  </data>
+  <data name="W_common_gid_nam_027" xml:space="preserve">
+    <value>RTN送信要求ファイル</value>
+  </data>
+  <data name="W_common_gid_nam_028" xml:space="preserve">
+    <value>RTN送信要求（データ部の端末発メッセージ）ファイル</value>
+  </data>
+  <data name="W_common_gid_nam_029" xml:space="preserve">
+    <value>１系</value>
+  </data>
+  <data name="W_common_gid_nam_030" xml:space="preserve">
+    <value>２系</value>
+  </data>
+  <data name="W_common_gid_nam_031" xml:space="preserve">
+    <value>１系と２系</value>
+  </data>
+  <data name="W_common_gid_nam_032" xml:space="preserve">
+    <value>端末発メッセージタイプ：</value>
+  </data>
+  <data name="W_common_gid_nam_033" xml:space="preserve">
+    <value>0：試験</value>
+  </data>
+  <data name="W_common_gid_nam_034" xml:space="preserve">
+    <value>1：安否情報</value>
+  </data>
+  <data name="W_common_gid_nam_035" xml:space="preserve">
+    <value>2：安否補足情報</value>
+  </data>
+  <data name="W_common_gid_nam_036" xml:space="preserve">
+    <value>3：安否支援情報確認</value>
+  </data>
+  <data name="W_common_gid_nam_037" xml:space="preserve">
+    <value>未読出</value>
+  </data>
+  <data name="W_common_gid_nam_038" xml:space="preserve">
+    <value>送信経路</value>
+  </data>
+  <data name="W_common_gid_nam_039" xml:space="preserve">
+    <value>RTNデータに設定する送信時刻</value>
+  </data>
+  <data name="W_common_gid_nam_040" xml:space="preserve">
+    <value>送信周波数/送信PN符号</value>
+  </data>
+  <data name="W_common_gid_nam_041" xml:space="preserve">
+    <value>データ部(端末発メッセージ)①</value>
+  </data>
+  <data name="W_common_gid_nam_042" xml:space="preserve">
+    <value>データ部(端末発メッセージ)②</value>
+  </data>
+  <data name="W_common_gid_nam_043" xml:space="preserve">
+    <value>データ部(端末発メッセージ)③</value>
+  </data>
+  <data name="W_common_gid_nam_044" xml:space="preserve">
+    <value>データ部(端末発メッセージ)④</value>
+  </data>
+  <data name="W_common_gid_nam_045" xml:space="preserve">
+    <value />
+  </data>
+  <data name="W_common_gid_nam_046" xml:space="preserve">
+    <value>送信間隔：</value>
+  </data>
+  <data name="W_common_gid_nam_047" xml:space="preserve">
+    <value>ミリ秒</value>
+  </data>
+  <data name="W_common_gid_nam_048" xml:space="preserve">
+    <value>回線試験送信ポート</value>
+  </data>
+  <data name="W_common_gid_nam_049" xml:space="preserve">
+    <value>設備</value>
+  </data>
+  <data name="W_common_gid_nam_050" xml:space="preserve">
+    <value>RTN</value>
+  </data>
+  <data name="W_common_gid_nam_051" xml:space="preserve">
+    <value>変数名</value>
+  </data>
+  <data name="W_common_gid_nam_052" xml:space="preserve">
+    <value>値</value>
+  </data>
+  <data name="W_common_gid_nam_053" xml:space="preserve">
+    <value>設備ステータス</value>
+  </data>
+  <data name="W_common_gid_nam_054" xml:space="preserve">
+    <value>FWDデータ</value>
+  </data>
+  <data name="W_common_gid_nam_055" xml:space="preserve">
+    <value>RTNデータ</value>
+  </data>
+  <data name="W_common_gmn_ttl_001" xml:space="preserve">
+    <value>制御ツール選択</value>
+  </data>
+  <data name="W_common_gmn_ttl_002" xml:space="preserve">
+    <value>接続／切断</value>
+  </data>
+  <data name="W_common_gmn_ttl_003" xml:space="preserve">
+    <value>データ設定／表示</value>
+  </data>
+  <data name="W_common_gmn_ttl_004" xml:space="preserve">
+    <value>パラメータ設定／表示（疑似地上局）</value>
+  </data>
+  <data name="W_common_gmn_ttl_005" xml:space="preserve">
+    <value>モニタパラメータ値表示</value>
+  </data>
+  <data name="W_common_gmn_ttl_006" xml:space="preserve">
+    <value>端末発メッセージ入力／送信</value>
+  </data>
+  <data name="W_common_gmn_ttl_007" xml:space="preserve">
+    <value>安否情報</value>
+  </data>
+  <data name="W_common_gmn_ttl_008" xml:space="preserve">
+    <value>リソース確保要求</value>
+  </data>
+  <data name="W_common_gmn_ttl_009" xml:space="preserve">
+    <value>安否テキスト</value>
+  </data>
+  <data name="W_common_gmn_ttl_010" xml:space="preserve">
+    <value>近親者テキスト未受信確認</value>
+  </data>
+  <data name="W_common_gmn_ttl_011" xml:space="preserve">
+    <value>近親者テキスト送達確認</value>
+  </data>
+  <data name="W_common_gmn_ttl_012" xml:space="preserve">
+    <value>システム情報</value>
+  </data>
+  <data name="W_common_gmn_ttl_013" xml:space="preserve">
+    <value>端末宛メッセージ入力／送信</value>
+  </data>
+  <data name="W_common_gmn_ttl_014" xml:space="preserve">
+    <value>安否情報送達確認</value>
+  </data>
+  <data name="W_common_gmn_ttl_015" xml:space="preserve">
+    <value>リソース確保応答</value>
+  </data>
+  <data name="W_common_gmn_ttl_016" xml:space="preserve">
+    <value>安否テキスト送達確認</value>
+  </data>
+  <data name="W_common_gmn_ttl_017" xml:space="preserve">
+    <value>近親者テキスト</value>
+  </data>
+  <data name="W_common_gmn_ttl_018" xml:space="preserve">
+    <value>システム報知テキスト</value>
+  </data>
+  <data name="W_common_gmn_ttl_019" xml:space="preserve">
+    <value>端末宛メッセージ周期送信</value>
+  </data>
+  <data name="W_common_gmn_ttl_020" xml:space="preserve">
+    <value>制御コマンド送信</value>
+  </data>
+  <data name="W_common_gmn_ttl_021" xml:space="preserve">
+    <value>送受信済メッセージ一覧表示</value>
+  </data>
+  <data name="W_common_gmn_ttl_022" xml:space="preserve">
+    <value>パラメータ設定／表示（Ｓ帯モニタ端末）</value>
+  </data>
+  <data name="W_common_gmn_ttl_023" xml:space="preserve">
+    <value>ＲＦパラメータ設定変更制御コマンド生成</value>
+  </data>
+  <data name="W_common_gmn_ttl_024" xml:space="preserve">
+    <value>接続／切断（疑似安否確認SS）</value>
+  </data>
+  <data name="W_common_gmn_ttl_025" xml:space="preserve">
+    <value>Ｓ帯モニタデータ送信</value>
+  </data>
+  <data name="W_common_gmn_ttl_026" xml:space="preserve">
+    <value>Ｓ帯RTNデータ送信要求周期送信</value>
+  </data>
+  <data name="W_common_gmn_ttl_027" xml:space="preserve">
+    <value>設備ステータス／回線試験周期送信</value>
+  </data>
+  <data name="W_common_gmn_ttl_028" xml:space="preserve">
+    <value>送受信済Ｓ帯モニタデータ一覧表示</value>
+  </data>
+  <data name="W_common_gmn_ttl_029" xml:space="preserve">
+    <value>端末宛メッセージ送信</value>
+  </data>
+  <data name="W_common_mnu_ttl_001" xml:space="preserve">
+    <value>メニュー</value>
+  </data>
+  <data name="W_common_mnu_ttl_002" xml:space="preserve">
+    <value>子画面</value>
+  </data>
+  <data name="W_common_mnu_ttl_003" xml:space="preserve">
+    <value>画面切り替え</value>
+  </data>
+  <data name="W_common_msg_typ_001" xml:space="preserve">
+    <value>安否情報</value>
+  </data>
+  <data name="W_common_msg_typ_002" xml:space="preserve">
+    <value>リソース確保要求</value>
+  </data>
+  <data name="W_common_msg_typ_003" xml:space="preserve">
+    <value>安否テキスト</value>
+  </data>
+  <data name="W_common_msg_typ_004" xml:space="preserve">
+    <value>近親者テキスト未受信確認</value>
+  </data>
+  <data name="W_common_msg_typ_005" xml:space="preserve">
+    <value>近親者テキスト送達確認</value>
+  </data>
+  <data name="W_common_msg_typ_101" xml:space="preserve">
+    <value>安否情報送達確認</value>
+  </data>
+  <data name="W_common_msg_typ_102" xml:space="preserve">
+    <value>リソース確保応答</value>
+  </data>
+  <data name="W_common_msg_typ_103" xml:space="preserve">
+    <value>安否テキスト送達確認</value>
+  </data>
+  <data name="W_common_msg_typ_104" xml:space="preserve">
+    <value>近親者テキスト</value>
+  </data>
+  <data name="W_common_msg_typ_121" xml:space="preserve">
+    <value>システム報知テキスト</value>
+  </data>
+  <data name="W_common_prg_msg_001" xml:space="preserve">
+    <value>パラメータ設定中 (m/n)</value>
+  </data>
+  <data name="W_common_prg_msg_002" xml:space="preserve">
+    <value>安否テキスト送信中 (m/n)</value>
+  </data>
+  <data name="W_common_prg_msg_003" xml:space="preserve">
+    <value>安否データ送信中</value>
+  </data>
+  <data name="W_common_prg_msg_004" xml:space="preserve">
+    <value>送信中</value>
+  </data>
+  <data name="W_common_prg_msg_005" xml:space="preserve">
+    <value>送受信済メッセージ表示中</value>
+  </data>
+  <data name="W_common_prg_msg_006" xml:space="preserve">
+    <value>周期送信停止中</value>
+  </data>
+  <data name="W_common_prg_msg_007" xml:space="preserve">
+    <value>周期送信実行中</value>
+  </data>
+  <data name="W_common_rst_ngmsg_001" xml:space="preserve">
+    <value>起動に失敗しました。</value>
+  </data>
+  <data name="W_common_rst_ngmsg_002" xml:space="preserve">
+    <value>接続に失敗しました。</value>
+  </data>
+  <data name="W_common_rst_ngmsg_003" xml:space="preserve">
+    <value>切断に失敗しました。</value>
+  </data>
+  <data name="W_common_rst_ngmsg_004" xml:space="preserve">
+    <value>設定に失敗しました。</value>
+  </data>
+  <data name="W_common_rst_ngmsg_005" xml:space="preserve">
+    <value>送信に失敗しました。</value>
+  </data>
+  <data name="W_common_rst_ngmsg_006" xml:space="preserve">
+    <value>送信停止に失敗しました。</value>
+  </data>
+  <data name="W_common_rst_ngmsg_007" xml:space="preserve">
+    <value>読み出しに失敗しました。</value>
+  </data>
+  <data name="W_common_rst_ngmsg_008" xml:space="preserve">
+    <value>読み出したデータが不正です。</value>
+  </data>
+  <data name="W_common_rst_ngmsg_009" xml:space="preserve">
+    <value>保存に失敗しました。</value>
+  </data>
+  <data name="W_common_rst_ngmsg_010" xml:space="preserve">
+    <value>周期送信に失敗しました。</value>
+  </data>
+  <data name="W_common_rst_ngmsg_011" xml:space="preserve">
+    <value>周期送信停止に失敗しました。</value>
+  </data>
+  <data name="W_common_rst_ngmsg_012" xml:space="preserve">
+    <value>テキスト分割に失敗しました。</value>
+  </data>
+  <data name="W_common_rst_ngmsg_013" xml:space="preserve">
+    <value>保存開始に失敗しました。</value>
+  </data>
+  <data name="W_common_rst_ngmsg_014" xml:space="preserve">
+    <value>保存停止に失敗しました。</value>
+  </data>
+  <data name="W_common_rst_ngmsg_015" xml:space="preserve">
+    <value>入力データが不正です。</value>
+  </data>
+  <data name="W_common_rst_ngmsg_016" xml:space="preserve">
+    <value>切断されました。</value>
+  </data>
+  <data name="W_common_rst_ngmsg_017" xml:space="preserve">
+    <value>読み出した一部のデータが不正でした。</value>
+  </data>
+  <data name="W_common_rst_okmsg_001" xml:space="preserve">
+    <value>正常に起動しました。</value>
+  </data>
+  <data name="W_common_rst_okmsg_002" xml:space="preserve">
+    <value>正常に接続しました。</value>
+  </data>
+  <data name="W_common_rst_okmsg_003" xml:space="preserve">
+    <value>正常に切断しました。</value>
+  </data>
+  <data name="W_common_rst_okmsg_004" xml:space="preserve">
+    <value>正常に設定しました。</value>
+  </data>
+  <data name="W_common_rst_okmsg_005" xml:space="preserve">
+    <value>正常に送信しました。</value>
+  </data>
+  <data name="W_common_rst_okmsg_006" xml:space="preserve">
+    <value>正常に送信停止しました。</value>
+  </data>
+  <data name="W_common_rst_okmsg_007" xml:space="preserve">
+    <value>正常に読み出しました。</value>
+  </data>
+  <data name="W_common_rst_okmsg_008" xml:space="preserve">
+    <value>正常に保存しました。</value>
+  </data>
+  <data name="W_common_rst_okmsg_009" xml:space="preserve">
+    <value>クリアしました。</value>
+  </data>
+  <data name="W_common_rst_okmsg_010" xml:space="preserve">
+    <value>保存を開始しました。</value>
+  </data>
+  <data name="W_common_rst_okmsg_011" xml:space="preserve">
+    <value>正常に保存を停止しました。</value>
+  </data>
+  <data name="W_common_rst_okmsg_012" xml:space="preserve">
+    <value>スクロールを再開しました。</value>
+  </data>
+  <data name="W_common_rst_okmsg_013" xml:space="preserve">
+    <value>スクロールを一時停止しました。</value>
+  </data>
+  <data name="W_common_rst_okmsg_014" xml:space="preserve">
+    <value>周期送信を開始しました。</value>
+  </data>
+  <data name="W_common_rst_okmsg_015" xml:space="preserve">
+    <value>正常に周期送信を停止しました。</value>
+  </data>
+  <data name="W_common_rst_okmsg_016" xml:space="preserve">
+    <value>テキスト分割しました。</value>
+  </data>
+  <data name="W_common_rst_okmsg_017" xml:space="preserve">
+    <value>計算しました。</value>
+  </data>
+  <data name="W_common_rst_okmsg_018" xml:space="preserve">
+    <value>接続に成功しました。（エラーあり）</value>
+  </data>
+  <data name="W_common_tab_ttl_001" xml:space="preserve">
+    <value>安否情報</value>
+  </data>
+  <data name="W_common_tab_ttl_002" xml:space="preserve">
+    <value>リソース確保要求</value>
+  </data>
+  <data name="W_common_tab_ttl_003" xml:space="preserve">
+    <value>安否テキスト</value>
+  </data>
+  <data name="W_common_tab_ttl_004" xml:space="preserve">
+    <value>近親者テキスト未受信確認</value>
+  </data>
+  <data name="W_common_tab_ttl_005" xml:space="preserve">
+    <value>近親者テキスト送達確認</value>
+  </data>
+  <data name="W_common_tab_ttl_006" xml:space="preserve">
+    <value>安否情報送達確認</value>
+  </data>
+  <data name="W_common_tab_ttl_007" xml:space="preserve">
+    <value>リソース確保応答</value>
+  </data>
+  <data name="W_common_tab_ttl_008" xml:space="preserve">
+    <value>安否テキスト送達確認</value>
+  </data>
+  <data name="W_common_tab_ttl_009" xml:space="preserve">
+    <value>近親者テキスト</value>
+  </data>
+  <data name="W_common_tab_ttl_010" xml:space="preserve">
+    <value>システム報知テキスト</value>
+  </data>
+  <data name="W_CTF011_dat_ttl_01" xml:space="preserve">
+    <value>接続先ＩＰアドレス:</value>
+  </data>
+  <data name="W_CTF011_gid_nam_01" xml:space="preserve">
+    <value>(nnn.nnn.nnn.nnn)</value>
+  </data>
+  <data name="W_CTF012_dat_ttl_02" xml:space="preserve">
+    <value>RTN用ポート番号:</value>
+  </data>
+  <data name="W_CTF012_gid_nam_01" xml:space="preserve">
+    <value>ポート番号: ３００５</value>
+  </data>
+  <data name="W_CTF012_gid_nam_02" xml:space="preserve">
+    <value>ポート番号: ３０９０</value>
+  </data>
+  <data name="W_CTF012_gid_nam_03" xml:space="preserve">
+    <value>３０９１</value>
+  </data>
+  <data name="W_CTF012_gid_nam_04" xml:space="preserve">
+    <value>３０９２</value>
+  </data>
+  <data name="W_CTF012_gid_nam_05" xml:space="preserve">
+    <value>３０９３</value>
+  </data>
+  <data name="W_CTF012_gid_nam_06" xml:space="preserve">
+    <value>３０９４</value>
+  </data>
+  <data name="W_CTF012_grp_ttl_01" xml:space="preserve">
+    <value>ポート番号</value>
+  </data>
+  <data name="W_CTF023_dat_ttl_01" xml:space="preserve">
+    <value>時刻合わせ</value>
+  </data>
+  <data name="W_CTF023_gid_nam_01" xml:space="preserve">
+    <value>制御ＰＣの時刻を、プロトタイプ端末の通信アプリへ設定する。</value>
+  </data>
+  <data name="W_CTF023_gid_nam_02" xml:space="preserve">
+    <value>制御ＰＣの時刻を、疑似地上局の通信アプリへ設定する。</value>
+  </data>
+  <data name="W_CTF024_dat_ttl_01" xml:space="preserve">
+    <value>RSSI：</value>
+  </data>
+  <data name="W_CTF024_dat_ttl_02" xml:space="preserve">
+    <value>AGC Lock状態：</value>
+  </data>
+  <data name="W_CTF024_dat_ttl_03" xml:space="preserve">
+    <value>キャリア同期状態：</value>
+  </data>
+  <data name="W_CTF024_dat_ttl_04" xml:space="preserve">
+    <value>シンボル同期状態：</value>
+  </data>
+  <data name="W_CTF024_dat_ttl_05" xml:space="preserve">
+    <value>フレーム同期状態：</value>
+  </data>
+  <data name="W_CTF024_dat_ttl_06" xml:space="preserve">
+    <value>ステータス表示：</value>
+  </data>
+  <data name="W_CTF024_dat_ttl_07" xml:space="preserve">
+    <value>TDMA同期状態：</value>
+  </data>
+  <data name="W_CTF024_dat_ttl_08" xml:space="preserve">
+    <value>同期</value>
+  </data>
+  <data name="W_CTF024_dat_ttl_09" xml:space="preserve">
+    <value>未同期</value>
+  </data>
+  <data name="W_CTF024_dat_ttl_10" xml:space="preserve">
+    <value>Lock</value>
+  </data>
+  <data name="W_CTF024_dat_ttl_11" xml:space="preserve">
+    <value>Unlock</value>
+  </data>
+  <data name="W_CTF024_dat_ttl_12" xml:space="preserve">
+    <value>RSCP：</value>
+  </data>
+  <data name="W_CTF024_dat_ttl_13" xml:space="preserve">
+    <value>周波数オフセット：</value>
+  </data>
+  <data name="W_CTF024_grp_ttl_01" xml:space="preserve">
+    <value>モニタパラメータ値（保存先）外部ファイル名</value>
+  </data>
+  <data name="W_CTF025_dat_ttl_01" xml:space="preserve">
+    <value>ＧＰＳ Ｏｎ／Ｏｆｆ設定</value>
+  </data>
+  <data name="W_CTF025_dat_ttl_02" xml:space="preserve">
+    <value>位置情報(初期値)設定</value>
+  </data>
+  <data name="W_CTF031_dat_ttl_01" xml:space="preserve">
+    <value>救助要否:</value>
+  </data>
+  <data name="W_CTF031_dat_ttl_02" xml:space="preserve">
+    <value>体調:</value>
+  </data>
+  <data name="W_CTF031_dat_ttl_03" xml:space="preserve">
+    <value>現在地:</value>
+  </data>
+  <data name="W_CTF031_dat_ttl_04" xml:space="preserve">
+    <value>同行者:</value>
+  </data>
+  <data name="W_CTF031_dat_ttl_05" xml:space="preserve">
+    <value>移動:</value>
+  </data>
+  <data name="W_CTF031_dat_ttl_06" xml:space="preserve">
+    <value>事故状況:</value>
+  </data>
+  <data name="W_CTF031_dat_ttl_07" xml:space="preserve">
+    <value>退避状況:</value>
+  </data>
+  <data name="W_CTF031_dat_val_01_0" xml:space="preserve">
+    <value>救助・迎え不要</value>
+  </data>
+  <data name="W_CTF031_dat_val_01_1" xml:space="preserve">
+    <value>家族・同僚の迎え依頼</value>
+  </data>
+  <data name="W_CTF031_dat_val_01_2" xml:space="preserve">
+    <value>救急車・救助隊の派遣依頼</value>
+  </data>
+  <data name="W_CTF031_dat_val_01_3" xml:space="preserve">
+    <value>ヘリ等の緊急救助依頼</value>
+  </data>
+  <data name="W_CTF031_dat_val_02_0" xml:space="preserve">
+    <value>全員良好</value>
+  </data>
+  <data name="W_CTF031_dat_val_02_1" xml:space="preserve">
+    <value>自分又は同行者が負傷</value>
+  </data>
+  <data name="W_CTF031_dat_val_02_2" xml:space="preserve">
+    <value>自分又は同行者が発病</value>
+  </data>
+  <data name="W_CTF031_dat_val_02_3" xml:space="preserve">
+    <value>自分又は同行者が負傷および発病</value>
+  </data>
+  <data name="W_CTF031_dat_val_03_0" xml:space="preserve">
+    <value>自宅・友人宅・親類宅</value>
+  </data>
+  <data name="W_CTF031_dat_val_03_1" xml:space="preserve">
+    <value>職場・学校・塾</value>
+  </data>
+  <data name="W_CTF031_dat_val_03_2" xml:space="preserve">
+    <value>駅・公共施設・商業施設</value>
+  </data>
+  <data name="W_CTF031_dat_val_03_3" xml:space="preserve">
+    <value>避難所・山小屋</value>
+  </data>
+  <data name="W_CTF031_dat_val_03_4" xml:space="preserve">
+    <value>自家用車</value>
+  </data>
+  <data name="W_CTF031_dat_val_03_5" xml:space="preserve">
+    <value>電車・バスの車内、または船上</value>
+  </data>
+  <data name="W_CTF031_dat_val_03_6" xml:space="preserve">
+    <value>屋外</value>
+  </data>
+  <data name="W_CTF031_dat_val_03_7" xml:space="preserve">
+    <value>海上</value>
+  </data>
+  <data name="W_CTF031_dat_val_04_0" xml:space="preserve">
+    <value>自分１人</value>
+  </data>
+  <data name="W_CTF031_dat_val_04_1" xml:space="preserve">
+    <value>自分含め２人</value>
+  </data>
+  <data name="W_CTF031_dat_val_04_2" xml:space="preserve">
+    <value>自分含め３人</value>
+  </data>
+  <data name="W_CTF031_dat_val_04_3" xml:space="preserve">
+    <value>自分含め４人以上</value>
+  </data>
+  <data name="W_CTF031_dat_val_05_0" xml:space="preserve">
+    <value>移動可能だが待機中</value>
+  </data>
+  <data name="W_CTF031_dat_val_05_1" xml:space="preserve">
+    <value>目的地に向け移動中</value>
+  </data>
+  <data name="W_CTF031_dat_val_05_2" xml:space="preserve">
+    <value>目的もなく移動中、漂流</value>
+  </data>
+  <data name="W_CTF031_dat_val_05_3" xml:space="preserve">
+    <value>渋滞、運休、操船不能等で移動困難</value>
+  </data>
+  <data name="W_CTF031_dat_val_06_0" xml:space="preserve">
+    <value>事故等なし</value>
+  </data>
+  <data name="W_CTF031_dat_val_06_1" xml:space="preserve">
+    <value>火災や爆発</value>
+  </data>
+  <data name="W_CTF031_dat_val_06_2" xml:space="preserve">
+    <value>浸水・転覆・沈没</value>
+  </data>
+  <data name="W_CTF031_dat_val_06_3" xml:space="preserve">
+    <value>倒壊・衝突・座礁</value>
+  </data>
+  <data name="W_CTF031_dat_val_07_0" xml:space="preserve">
+    <value>退避する状況にない</value>
+  </data>
+  <data name="W_CTF031_dat_val_07_1" xml:space="preserve">
+    <value>建物・乗物の内部に退避</value>
+  </data>
+  <data name="W_CTF031_dat_val_07_2" xml:space="preserve">
+    <value>建物・乗物の外部に退避、船体放棄</value>
+  </data>
+  <data name="W_CTF032_gid_nam_01" xml:space="preserve">
+    <value>(1～32)</value>
+  </data>
+  <data name="W_CTF033_dat_ttl_01" xml:space="preserve">
+    <value>（分割後）安否テキスト</value>
+  </data>
+  <data name="W_CTF033_dat_ttl_02" xml:space="preserve">
+    <value>SeqNo.</value>
+  </data>
+  <data name="W_CTF033_dat_ttl_03" xml:space="preserve">
+    <value>（分割後）安否ﾃｷｽﾄ</value>
+  </data>
+  <data name="W_CTF033_gid_nam_01" xml:space="preserve">
+    <value>（０～９５文字）</value>
+  </data>
+  <data name="W_CTF033_gid_nam_02" xml:space="preserve">
+    <value>(1～32)</value>
+  </data>
+  <data name="W_CTF033_grp_ttl_01" xml:space="preserve">
+    <value>（分割前）安否テキスト</value>
+  </data>
+  <data name="W_CTF033_grp_ttl_02" xml:space="preserve">
+    <value>（分割後）安否テキスト</value>
+  </data>
+  <data name="W_CTF035_dat_ttl_01" xml:space="preserve">
+    <value>メッセージＩＤ①:</value>
+  </data>
+  <data name="W_CTF035_dat_ttl_02" xml:space="preserve">
+    <value>メッセージＩＤ②:</value>
+  </data>
+  <data name="W_CTF035_dat_ttl_03" xml:space="preserve">
+    <value>メッセージＩＤ③:</value>
+  </data>
+  <data name="W_CTF035_dat_ttl_04" xml:space="preserve">
+    <value>メッセージＩＤ④:</value>
+  </data>
+  <data name="W_CTF035_dat_ttl_05" xml:space="preserve">
+    <value>メッセージＩＤ⑤:</value>
+  </data>
+  <data name="W_CTF035_dat_ttl_06" xml:space="preserve">
+    <value>メッセージＩＤ⑥:</value>
+  </data>
+  <data name="W_CTF035_gid_nam_01" xml:space="preserve">
+    <value>（１～２５５）　、②～⑥も同様</value>
+  </data>
+  <data name="W_CTF040_dat_ttl_01" xml:space="preserve">
+    <value>システム運用状態:</value>
+  </data>
+  <data name="W_CTF040_dat_ttl_02" xml:space="preserve">
+    <value>地上局・衛星出力端遅延時間（μsec):</value>
+  </data>
+  <data name="W_CTF040_dat_ttl_03" xml:space="preserve">
+    <value>X:</value>
+  </data>
+  <data name="W_CTF040_dat_ttl_04" xml:space="preserve">
+    <value>Y:</value>
+  </data>
+  <data name="W_CTF040_dat_ttl_05" xml:space="preserve">
+    <value>Z:</value>
+  </data>
+  <data name="W_CTF040_dat_ttl_06" xml:space="preserve">
+    <value>開始時刻(Tick):</value>
+  </data>
+  <data name="W_CTF040_dat_ttl_07" xml:space="preserve">
+    <value>（開始年月日時分秒:</value>
+  </data>
+  <data name="W_CTF040_dat_ttl_08" xml:space="preserve">
+    <value>）</value>
+  </data>
+  <data name="W_CTF040_dat_ttl_09" xml:space="preserve">
+    <value>ｽﾛｯﾄ算出ﾓｰﾄﾞ:</value>
+  </data>
+  <data name="W_CTF040_dat_ttl_10" xml:space="preserve">
+    <value>安否情報周波数:</value>
+  </data>
+  <data name="W_CTF040_dat_ttl_11" xml:space="preserve">
+    <value>PN符号数:</value>
+  </data>
+  <data name="W_CTF040_dat_ttl_12" xml:space="preserve">
+    <value>送信Grp数:</value>
+  </data>
+  <data name="W_CTF040_dat_ttl_13" xml:space="preserve">
+    <value>送信Grp-offset:</value>
+  </data>
+  <data name="W_CTF040_dat_val_01" xml:space="preserve">
+    <value>未使用</value>
+  </data>
+  <data name="W_CTF040_dat_val_02" xml:space="preserve">
+    <value>通常稼働</value>
+  </data>
+  <data name="W_CTF040_dat_val_03" xml:space="preserve">
+    <value>ﾒﾝﾃﾅﾝｽ中</value>
+  </data>
+  <data name="W_CTF040_dat_val_04" xml:space="preserve">
+    <value>未使用</value>
+  </data>
+  <data name="W_CTF040_dat_val_05" xml:space="preserve">
+    <value>ランダム</value>
+  </data>
+  <data name="W_CTF040_dat_val_06" xml:space="preserve">
+    <value>ユーザIDベース</value>
+  </data>
+  <data name="W_CTF040_gid_nam_01" xml:space="preserve">
+    <value>(0～16,777,215)</value>
+  </data>
+  <data name="W_CTF040_gid_nam_02" xml:space="preserve">
+    <value>(0～1,048,575)</value>
+  </data>
+  <data name="W_CTF040_gid_nam_03" xml:space="preserve">
+    <value>(0～14)</value>
+  </data>
+  <data name="W_CTF040_gid_nam_04" xml:space="preserve">
+    <value>(0～400)</value>
+  </data>
+  <data name="W_CTF040_gid_nam_05" xml:space="preserve">
+    <value>(0～255)</value>
+  </data>
+  <data name="W_CTF040_gid_nam_06" xml:space="preserve">
+    <value>(1～16,777,215)</value>
+  </data>
+  <data name="W_CTF040_grp_ttl_01" xml:space="preserve">
+    <value>静止衛星位置軌道情報</value>
+  </data>
+  <data name="W_CTF040_grp_ttl_02" xml:space="preserve">
+    <value>アクセス制御情報</value>
+  </data>
+  <data name="W_CTF041_dat_ttl_01" xml:space="preserve">
+    <value>安否情報送達確認数:</value>
+  </data>
+  <data name="W_CTF041_gid_nam_01" xml:space="preserve">
+    <value>(1～238)</value>
+  </data>
+  <data name="W_CTF042_dat_ttl_01" xml:space="preserve">
+    <value>リソース確保応答数:</value>
+  </data>
+  <data name="W_CTF042_dat_ttl_02" xml:space="preserve">
+    <value>周波数</value>
+  </data>
+  <data name="W_CTF042_dat_ttl_03" xml:space="preserve">
+    <value>PN符号</value>
+  </data>
+  <data name="W_CTF042_gid_nam_01" xml:space="preserve">
+    <value>(1～119)</value>
+  </data>
+  <data name="W_CTF043_dat_seq_01" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="W_CTF043_dat_seq_02" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="W_CTF043_dat_seq_03" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="W_CTF043_dat_seq_04" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="W_CTF043_dat_seq_05" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="W_CTF043_dat_seq_06" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="W_CTF043_dat_seq_07" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="W_CTF043_dat_seq_08" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="W_CTF043_dat_seq_09" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="W_CTF043_dat_seq_10" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="W_CTF043_dat_seq_11" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="W_CTF043_dat_seq_12" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="W_CTF043_dat_seq_13" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="W_CTF043_dat_seq_14" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="W_CTF043_dat_seq_15" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="W_CTF043_dat_seq_16" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="W_CTF043_dat_seq_17" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="W_CTF043_dat_seq_18" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="W_CTF043_dat_seq_19" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="W_CTF043_dat_seq_20" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="W_CTF043_dat_seq_21" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="W_CTF043_dat_seq_22" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="W_CTF043_dat_seq_23" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="W_CTF043_dat_seq_24" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="W_CTF043_dat_seq_25" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="W_CTF043_dat_seq_26" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="W_CTF043_dat_seq_27" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="W_CTF043_dat_seq_28" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="W_CTF043_dat_seq_29" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="W_CTF043_dat_seq_30" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="W_CTF043_dat_seq_31" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="W_CTF043_dat_seq_32" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="W_CTF043_dat_ttl_01" xml:space="preserve">
+    <value>安否テキスト送達数:</value>
+  </data>
+  <data name="W_CTF043_gid_nam_01" xml:space="preserve">
+    <value>(1～104)</value>
+  </data>
+  <data name="W_CTF044_dat_ttl_01" xml:space="preserve">
+    <value>近親者テキスト数:</value>
+  </data>
+  <data name="W_CTF044_dat_ttl_02" xml:space="preserve">
+    <value>未受数</value>
+  </data>
+  <data name="W_CTF044_dat_ttl_03" xml:space="preserve">
+    <value>ＩＤ</value>
+  </data>
+  <data name="W_CTF044_dat_ttl_04" xml:space="preserve">
+    <value>ﾒｯｾｰｼﾞ長</value>
+  </data>
+  <data name="W_CTF044_dat_ttl_05" xml:space="preserve">
+    <value>受信時刻（秒）</value>
+  </data>
+  <data name="W_CTF044_dat_ttl_06" xml:space="preserve">
+    <value>近親者テキスト</value>
+  </data>
+  <data name="W_CTF044_gid_nam_01" xml:space="preserve">
+    <value>(1～4)</value>
+  </data>
+  <data name="W_CTF051_dat_ttl_01" xml:space="preserve">
+    <value>送信時刻:</value>
+  </data>
+  <data name="W_CTF051_dat_ttl_02" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="W_CTF051_dat_ttl_03" xml:space="preserve">
+    <value>（</value>
+  </data>
+  <data name="W_CTF051_dat_ttl_04" xml:space="preserve">
+    <value>）</value>
+  </data>
+  <data name="W_CTF051_dat_ttl_05" xml:space="preserve">
+    <value>ﾒｯｾｰｼﾞ長(Byte):</value>
+  </data>
+  <data name="W_CTF051_dat_val_01" xml:space="preserve">
+    <value>安否確認サービス運用中</value>
+  </data>
+  <data name="W_CTF051_dat_val_02" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="W_CTF051_gid_nam_01" xml:space="preserve">
+    <value>(0～828)</value>
+  </data>
+  <data name="W_CTF051_gid_nam_02" xml:space="preserve">
+    <value>(0～414)</value>
+  </data>
+  <data name="W_CTF101_dat_ttl_01" xml:space="preserve">
+    <value>送信開始:</value>
+  </data>
+  <data name="W_CTF101_grp_ttl_01" xml:space="preserve">
+    <value>システム情報</value>
+  </data>
+  <data name="W_CTF101_grp_ttl_02" xml:space="preserve">
+    <value>メッセージ①</value>
+  </data>
+  <data name="W_CTF101_grp_ttl_03" xml:space="preserve">
+    <value>メッセージ②</value>
+  </data>
+  <data name="W_CTF101_grp_ttl_04" xml:space="preserve">
+    <value>メッセージ③</value>
+  </data>
+  <data name="W_CTF101_grp_ttl_05" xml:space="preserve">
+    <value>メッセージ④</value>
+  </data>
+  <data name="W_CTF101_grp_ttl_06" xml:space="preserve">
+    <value>メッセージ送信開始タイミング</value>
+  </data>
+  <data name="W_CTF102_grp_ttl_01" xml:space="preserve">
+    <value>制御コマンド（ＢＩＮ）</value>
+  </data>
+  <data name="W_CTF102_grp_ttl_02" xml:space="preserve">
+    <value>制御コマンド応答</value>
+  </data>
+  <data name="W_CTF201_dat_ttl_01" xml:space="preserve">
+    <value>リアルタイム表示</value>
+  </data>
+  <data name="W_CTF201_dat_ttl_02" xml:space="preserve">
+    <value>外部ファイルデータ表示</value>
+  </data>
+  <data name="W_CTF201_dat_ttl_03" xml:space="preserve">
+    <value>送受信時刻</value>
+  </data>
+  <data name="W_CTF201_dat_ttl_04" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="W_CTF201_dat_ttl_05" xml:space="preserve">
+    <value>送受信済メッセージ</value>
+  </data>
+  <data name="W_CTF201_dat_ttl_06" xml:space="preserve">
+    <value>送受信</value>
+  </data>
+  <data name="W_CTF201_grp_ttl_01" xml:space="preserve">
+    <value>送受信済メッセージ一覧表示</value>
+  </data>
+  <data name="W_CTF201_grp_ttl_02" xml:space="preserve">
+    <value>表示データ</value>
+  </data>
+  <data name="W_CTF201_grp_ttl_03" xml:space="preserve">
+    <value>送受信済メッセージ（保存先）外部ファイル名</value>
+  </data>
+  <data name="W_CTF201_grp_ttl_04" xml:space="preserve">
+    <value>送受信済メッセージ（読出）外部ファイル名</value>
+  </data>
+  <data name="W_CTF201_grp_ttl_05" xml:space="preserve">
+    <value>送受信済メッセージ表示</value>
+  </data>
+  <data name="W_CTF202_dat_ttl_01" xml:space="preserve">
+    <value>データ名</value>
+  </data>
+  <data name="W_CTF202_dat_ttl_02" xml:space="preserve">
+    <value>経路</value>
+  </data>
+  <data name="W_CTF202_dat_ttl_03" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="W_CTF202_grp_ttl_01" xml:space="preserve">
+    <value>送受信済Ｓ帯モニタデータ一覧表示</value>
+  </data>
+  <data name="W_CTF202_grp_ttl_02" xml:space="preserve">
+    <value>送受信経路</value>
+  </data>
+  <data name="W_CTM000_dat_ttl_01" xml:space="preserve">
+    <value>(0～13)</value>
+  </data>
+  <data name="W_CTM000_dat_ttl_02" xml:space="preserve">
+    <value>(0～399)</value>
+  </data>
+  <data name="W_CTM000_grp_ttl_01" xml:space="preserve">
+    <value>受信周波数/PN設定</value>
+  </data>
+  <data name="W_CTM000_grp_ttl_02" xml:space="preserve">
+    <value>受信周波数/PN周期設定</value>
+  </data>
+  <data name="W_common_prg_msg_008" xml:space="preserve">
+    <value>接続中</value>
+  </data>
+  <data name="W_CTF202_dat_nam_01" xml:space="preserve">
+    <value>設備ステータス</value>
+  </data>
+  <data name="W_CTF202_dat_nam_02" xml:space="preserve">
+    <value>設備ステータス応答</value>
+  </data>
+  <data name="W_CTF202_dat_nam_03" xml:space="preserve">
+    <value>回線試験データ</value>
+  </data>
+  <data name="W_CTF202_dat_nam_04" xml:space="preserve">
+    <value>回線試験データ応答</value>
+  </data>
+  <data name="W_CTF202_dat_nam_05" xml:space="preserve">
+    <value>S帯FWDデータ取得要求</value>
+  </data>
+  <data name="W_CTF202_dat_nam_06" xml:space="preserve">
+    <value>S帯FWDデータ取得応答</value>
+  </data>
+  <data name="W_CTF202_dat_nam_07" xml:space="preserve">
+    <value>S帯RTNデータ送信要求</value>
+  </data>
+  <data name="W_CTF202_dat_nam_08" xml:space="preserve">
+    <value>S帯RTNデータ送信応答</value>
+  </data>
+  <data name="W_common_gid_nam_056" xml:space="preserve">
+    <value>Ｓ帯RTNデータ送信要求</value>
+  </data>
+  <data name="W_common_gid_nam_057" xml:space="preserve">
+    <value>送信間隔</value>
+  </data>
+  <data name="W_common_rst_ngmsg_018" xml:space="preserve">
+    <value>操作をキャンセルしました。</value>
+  </data>
+  <data name="W_common_msg_typ_rserr" xml:space="preserve">
+    <value>RSエラー</value>
+  </data>
+  <data name="W_CTF202_dat_nam_09" xml:space="preserve">
+    <value>装置固有情報設定応答</value>
+  </data>
+  <data name="W_CTF202_dat_nam_00" xml:space="preserve">
+    <value>不明データ</value>
+  </data>
+</root>

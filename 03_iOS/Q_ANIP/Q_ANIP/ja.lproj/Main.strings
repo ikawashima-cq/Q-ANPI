@@ -1,0 +1,168 @@
+
+/* Class = "UILabel"; text = "Phone number"; ObjectID = "53O-Nd-xGl"; */
+"53O-Nd-xGl.text" = "Phone number";
+
+/* Class = "UILabel"; text = "[required]"; ObjectID = "71K-gn-OhS"; */
+"71K-gn-OhS.text" = "[required]";
+
+/* Class = "UILabel"; text = "2017-10-05 13:10:15"; ObjectID = "8g6-mc-UI6"; */
+"8g6-mc-UI6.text" = "2017-10-05 13:10:15";
+
+/* Class = "UILabel"; text = "生年月日"; ObjectID = "CSe-N8-oXX"; */
+"CSe-N8-oXX.text" = "生年月日";
+
+/* Class = "UILabel"; text = "介護要否"; ObjectID = "CZL-tZ-DoH"; */
+"CZL-tZ-DoH.text" = "介護要否";
+
+/* Class = "UILabel"; text = "姓"; ObjectID = "D7P-0a-vgL"; */
+"D7P-0a-vgL.text" = "姓";
+
+/* Class = "UILabel"; text = "Family name"; ObjectID = "E2a-p8-QgD"; */
+"E2a-p8-QgD.text" = "Family name";
+
+/* Class = "UILabel"; text = "[required]"; ObjectID = "GA6-rS-YxY"; */
+"GA6-rS-YxY.text" = "[required]";
+
+/* Class = "UILabel"; text = "名"; ObjectID = "Gm1-rQ-qIx"; */
+"Gm1-rQ-qIx.text" = "名";
+
+/* Class = "UILabel"; text = "電話番号"; ObjectID = "IHE-RN-6Ar"; */
+"IHE-RN-6Ar.text" = "電話番号";
+
+/* Class = "UILabel"; text = "障がいの有無"; ObjectID = "J4I-cf-cB6"; */
+"J4I-cf-cB6.text" = "障がいの有無";
+
+/* Class = "UILabel"; text = "*必須"; ObjectID = "M9s-KL-xeZ"; */
+"M9s-KL-xeZ.text" = "*必須";
+
+/* Class = "UILabel"; text = "*必須"; ObjectID = "NQm-sr-3Vb"; */
+"NQm-sr-3Vb.text" = "*必須";
+
+/* Class = "UIButton"; normalTitle = "内容確認:Confirmation"; ObjectID = "R89-TJ-NaG"; */
+"R89-TJ-NaG.normalTitle" = "内容確認:Confirmation";
+
+/* Class = "UILabel"; text = "(例) 20"; ObjectID = "S1H-ED-gNt"; */
+"S1H-ED-gNt.text" = "(例) 20";
+
+/* Class = "UILabel"; text = "日"; ObjectID = "Sf3-Ne-fWH"; */
+"Sf3-Ne-fWH.text" = "日";
+
+/* Class = "UILabel"; text = "妊産婦"; ObjectID = "SmO-g0-3af"; */
+"SmO-g0-3af.text" = "妊産婦";
+
+/* Class = "UILabel"; text = "個人安否登録"; ObjectID = "Tu7-ek-iLg"; */
+"Tu7-ek-iLg.text" = "個人安否登録";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "TvI-Y4-sgV"; */
+"TvI-Y4-sgV.text" = "Label";
+
+/* Class = "UILabel"; text = "*必須"; ObjectID = "UFI-cC-RRx"; */
+"UFI-cC-RRx.text" = "*必須";
+
+/* Class = "UILabel"; text = "西暦"; ObjectID = "VA1-wp-7Pg"; */
+"VA1-wp-7Pg.text" = "西暦";
+
+/* Class = "UILabel"; text = "住所"; ObjectID = "WL4-aX-LQt"; */
+"WL4-aX-LQt.text" = "住所";
+
+/* Class = "UILabel"; text = "怪我の有無"; ObjectID = "WTO-a4-ZS9"; */
+"WTO-a4-ZS9.text" = "怪我の有無";
+
+/* Class = "UILabel"; text = "個人安否登録"; ObjectID = "WZ3-OG-tL7"; */
+"WZ3-OG-tL7.text" = "個人安否登録";
+
+/* Class = "UILabel"; text = "入所/退所/在宅"; ObjectID = "XNh-AK-tNE"; */
+"XNh-AK-tNE.text" = "入所/退所/在宅";
+
+/* Class = "UILabel"; text = "電話番号:09012345678\n氏名:準天太郎\n年齢:78\n性別:男性\n入所状況:入所\n公表可否:許可\n住所:和歌山県和歌山市どこそこ１丁目xx番地字なんとかの１\n怪我の有無:無し\n要介護:必要\n障がいの有無:無し\n妊産婦:いいえ\n1\n2\n3\n4"; ObjectID = "Y4r-AB-V4o"; */
+"Y4r-AB-V4o.text" = "電話番号:09012345678\n氏名:準天太郎\n年齢:78\n性別:男性\n入所状況:入所\n公表可否:許可\n住所:和歌山県和歌山市どこそこ１丁目xx番地字なんとかの１\n怪我の有無:無し\n要介護:必要\n障がいの有無:無し\n妊産婦:いいえ\n1\n2\n3\n4";
+
+/* Class = "UILabel"; text = "入力情報"; ObjectID = "ZBu-NI-Uxq"; */
+"ZBu-NI-Uxq.text" = "入力情報";
+
+/* Class = "UIButton"; normalTitle = "▲"; ObjectID = "ZeG-gG-eAP"; */
+"ZeG-gG-eAP.normalTitle" = "▲";
+
+/* Class = "UILabel"; text = "*必須"; ObjectID = "aIp-el-qgI"; */
+"aIp-el-qgI.text" = "*必須";
+
+/* Class = "UILabel"; text = "Given name"; ObjectID = "dbz-Ai-rKV"; */
+"dbz-Ai-rKV.text" = "Given name";
+
+/* Class = "UILabel"; text = "任意項目表示"; ObjectID = "dp1-ZE-ymb"; */
+"dp1-ZE-ymb.text" = "任意項目表示";
+
+/* Class = "UIButton"; normalTitle = "暗号化してQRコードに変換"; ObjectID = "fPo-ZO-vp4"; */
+"fPo-ZO-vp4.normalTitle" = "暗号化してQRコードに変換";
+
+/* Class = "UIButton"; selectedTitle = "暗号化してQRコードに変換"; ObjectID = "fPo-ZO-vp4"; */
+"fPo-ZO-vp4.selectedTitle" = "暗号化してQRコードに変換";
+
+/* Class = "UIButton"; normalTitle = "前回登録情報"; ObjectID = "fQM-wB-YeK"; */
+"fQM-wB-YeK.normalTitle" = "前回登録情報";
+
+/* Class = "UILabel"; text = "Click here"; ObjectID = "fUG-Lb-OkC"; */
+"fUG-Lb-OkC.text" = "Click here";
+
+/* Class = "UILabel"; text = "年"; ObjectID = "h01-Gm-TCf"; */
+"h01-Gm-TCf.text" = "年";
+
+/* Class = "UILabel"; text = "【実証実験】\n個人が特定されない情報を収集します。"; ObjectID = "hkz-eS-APQ"; */
+"hkz-eS-APQ.text" = "【実証実験】\n個人が特定されない情報を収集します。";
+
+/* Class = "UIButton"; normalTitle = "送信"; ObjectID = "izR-LJ-FTn"; */
+"izR-LJ-FTn.normalTitle" = "送信";
+
+/* Class = "UILabel"; text = "[required]"; ObjectID = "jwW-kM-71b"; */
+"jwW-kM-71b.text" = "[required]";
+
+/* Class = "UILabel"; text = "(例) 5678"; ObjectID = "l21-sR-X7u"; */
+"l21-sR-X7u.text" = "(例) 5678";
+
+/* Class = "UILabel"; text = "Click here"; ObjectID = "oXZ-NQ-XZo"; */
+"oXZ-NQ-XZo.text" = "Click here";
+
+/* Class = "UILabel"; text = "*必須"; ObjectID = "p8w-h1-YIw"; */
+"p8w-h1-YIw.text" = "*必須";
+
+/* Class = "UILabel"; text = "(例) たろう"; ObjectID = "qAE-c8-gHd"; */
+"qAE-c8-gHd.text" = "(例) たろう";
+
+/* Class = "UILabel"; text = "Age"; ObjectID = "qPn-gW-qHT"; */
+"qPn-gW-qHT.text" = "Date of birth";
+
+/* Class = "UILabel"; text = "月"; ObjectID = "qfW-Vz-lzA"; */
+"qfW-Vz-lzA.text" = "月";
+
+/* Class = "UILabel"; text = "[required]"; ObjectID = "r9E-iv-guo"; */
+"r9E-iv-guo.text" = "[required]";
+
+/* Class = "UILabel"; text = "*必須"; ObjectID = "sHD-jR-WUF"; */
+"sHD-jR-WUF.text" = "*必須";
+
+/* Class = "UILabel"; text = "下記のQRコードが読み取り機に写るようにタブレットをかざしてください"; ObjectID = "sch-Jx-9pi"; */
+"sch-Jx-9pi.text" = "下記のQRコードが読み取り機に写るようにタブレットをかざしてください";
+
+/* Class = "UILabel"; text = "Sex"; ObjectID = "uDi-bh-AMh"; */
+"uDi-bh-AMh.text" = "Sex";
+
+/* Class = "UIButton"; normalTitle = "クリア"; ObjectID = "v31-1q-g7c"; */
+"v31-1q-g7c.normalTitle" = "クリア";
+
+/* Class = "UILabel"; text = "性別"; ObjectID = "v5P-6C-vFP"; */
+"v5P-6C-vFP.text" = "性別";
+
+/* Class = "UILabel"; text = "*必須"; ObjectID = "x1L-xV-5eR"; */
+"x1L-xV-5eR.text" = "*必須";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "xLF-xA-RVQ"; */
+"xLF-xA-RVQ.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "戻る"; ObjectID = "yVz-1W-ddX"; */
+"yVz-1W-ddX.normalTitle" = "戻る";
+
+/* Class = "UILabel"; text = "[required]"; ObjectID = "zaG-H4-7yA"; */
+"zaG-H4-7yA.text" = "[required]";
+
+/* Class = "UILabel"; text = "安否情報の公表可否"; ObjectID = "zsg-uU-n6e"; */
+"zsg-uU-n6e.text" = "安否情報の公表可否";

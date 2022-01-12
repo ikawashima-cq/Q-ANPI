@@ -1,0 +1,3 @@
+range,0-179
+bit,8
+print,%d“x

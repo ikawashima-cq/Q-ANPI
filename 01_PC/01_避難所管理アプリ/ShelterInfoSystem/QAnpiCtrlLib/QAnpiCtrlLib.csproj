@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A2AB8FD3-4929-4938-84B3-B46AA8DA8152}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QAnpiCtrlLib</RootNamespace>
+    <AssemblyName>QAnpiCtrlLib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="consts\CommonConst.cs" />
+    <Compile Include="consts\DefaultRFParam.cs" />
+    <Compile Include="consts\EncDecConst.cs" />
+    <Compile Include="consts\ModemRegisters.cs" />
+    <Compile Include="log\LogMng.cs" />
+    <Compile Include="msg\DecodeManager.cs" />
+    <Compile Include="msg\EncodeManager.cs" />
+    <Compile Include="msg\EquStatInfo.cs" />
+    <Compile Include="msg\MsgFromTerminal.cs" />
+    <Compile Include="msg\MsgSBandData.cs" />
+    <Compile Include="msg\MsgSBandDevInfoSetRsp.cs" />
+    <Compile Include="msg\MsgSBandEquStatReq.cs" />
+    <Compile Include="msg\MsgSBandEquStatRsp.cs" />
+    <Compile Include="msg\MsgSBandFwdGetReq.cs" />
+    <Compile Include="msg\MsgSBandFwdGetRsp.cs" />
+    <Compile Include="msg\MsgSBandLineTestReq.cs" />
+    <Compile Include="msg\MsgSBandLineTestRsp.cs" />
+    <Compile Include="msg\MsgSBandRtnSendReq.cs" />
+    <Compile Include="msg\MsgSBandRtnSendRsp.cs" />
+    <Compile Include="msg\MsgToTerminal.cs" />
+    <Compile Include="msg\MsgType0.cs" />
+    <Compile Include="msg\MsgType1.cs" />
+    <Compile Include="msg\MsgType100.cs" />
+    <Compile Include="msg\MsgType130.cs" />
+    <Compile Include="msg\MsgType150.cs" />
+    <Compile Include="msg\MsgType2.cs" />
+    <Compile Include="msg\MsgType255.cs" />
+    <Compile Include="msg\MsgType3.cs" />
+    <Compile Include="msg\SBandFwdRcvInfo.cs" />
+    <Compile Include="msg\SBandRtnSendInfo.cs" />
+    <Compile Include="msg\SystemInfo.cs" />
+    <Compile Include="msg\TimeBCD.cs" />
+    <Compile Include="msg\TimeBCDMsec.cs" />
+    <Compile Include="msg\TimeUsec.cs" />
+    <Compile Include="msg\TypeAndSystemInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="utils\CommonUtils.cs" />
+    <Compile Include="utils\CsvMng.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="log\log4net.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

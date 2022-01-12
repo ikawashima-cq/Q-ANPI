@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1C851199-263B-48DC-9E57-797038C3C829}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ShelterInfoSystem</RootNamespace>
+    <AssemblyName>避難所管理</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>ShelterInfoSystem.exe.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\QAnpiCtrlLib\bin\Debug\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="QAnpiCtrlLib">
+      <HintPath>..\QAnpiCtrlLib\bin\Debug\QAnpiCtrlLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoSendThread.cs" />
+    <Compile Include="BlowFish.cs" />
+    <Compile Include="FormCloseShelter2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCloseShelter2.Designer.cs">
+      <DependentUpon>FormCloseShelter2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="control\ComAplMsgMng.cs" />
+    <Compile Include="control\ComCtl.cs" />
+    <Compile Include="control\ConfigFileMng.cs" />
+    <Compile Include="control\MsgSendBase.cs" />
+    <Compile Include="control\MsgSendProc.cs" />
+    <Compile Include="control\ObjectKeeper.cs" />
+    <Compile Include="control\RFParamters.cs" />
+    <Compile Include="control\SBandComCtl.cs" />
+    <Compile Include="control\SBandConnectionInfo.cs" />
+    <Compile Include="DataClass.cs" />
+    <Compile Include="DbAccess.cs" />
+    <Compile Include="DbAccessStep2.cs" />
+    <Compile Include="FormAutoSendSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAutoSendSetup.Designer.cs">
+      <DependentUpon>FormAutoSendSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfirmOpenShelter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfirmOpenShelter.Designer.cs">
+      <DependentUpon>FormConfirmOpenShelter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfirmUpdateLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfirmUpdateLocation.Designer.cs">
+      <DependentUpon>FormConfirmUpdateLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormImportQR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormImportQR.Designer.cs">
+      <DependentUpon>FormImportQR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModifyPersonalInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModifyPersonalInfo.Designer.cs">
+      <DependentUpon>FormModifyPersonalInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOpenShelter2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOpenShelter2.Designer.cs">
+      <DependentUpon>FormOpenShelter2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditShelter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditShelter.Designer.cs">
+      <DependentUpon>FormEditShelter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistShelter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistShelter.Designer.cs">
+      <DependentUpon>FormRegistShelter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSubGhzConnectTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSubGhzConnectTest.designer.cs">
+      <DependentUpon>FormSubGhzConnectTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSwitchShelter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSwitchShelter.Designer.cs">
+      <DependentUpon>FormSwitchShelter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTcpSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTcpSetting.Designer.cs">
+      <DependentUpon>FormTcpSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateLocationInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateLocationInfo.Designer.cs">
+      <DependentUpon>FormUpdateLocationInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TcpPersonalThread.cs" />
+    <Compile Include="TermInfo.cs" />
+    <Compile Include="FormImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormImport.Designer.cs">
+      <DependentUpon>FormImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditPersonal.Designer.cs">
+      <DependentUpon>FormEditPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPersonalSendHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPersonalSendHistory.Designer.cs">
+      <DependentUpon>FormPersonalSendHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReceiveMessageView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReceiveMessageView.designer.cs">
+      <DependentUpon>FormReceiveMessageView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSendShelterInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSendShelterInfo.Designer.cs">
+      <DependentUpon>FormSendShelterInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormShelterInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormShelterInfo.Designer.cs">
+      <DependentUpon>FormShelterInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSubGHzConnectSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSubGHzConnectSettings.Designer.cs">
+      <DependentUpon>FormSubGHzConnectSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTcpConnectSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTcpConnectSettings.designer.cs">
+      <DependentUpon>FormTcpConnectSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTermStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTermStatus.designer.cs">
+      <DependentUpon>FormTermStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWait.Designer.cs">
+      <DependentUpon>FormWait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FwdReceiver.cs" />
+    <Compile Include="HttpGetThread.cs" />
+    <Compile Include="HttpPostThread.cs" />
+    <Compile Include="HttpThreadBase.cs" />
+    <Compile Include="L1sBitsToMsg.cs" />
+    <Compile Include="L1sFormat.cs" />
+    <Compile Include="L1sParser.cs" />
+    <Compile Include="L1sRcvInfo.cs" />
+    <Compile Include="L1sReceiver.cs" />
+    <Compile Include="ListViewInputText.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LogThread.cs" />
+    <Compile Include="MsgConv.cs" />
+    <Compile Include="MsgL1sGetReq.cs" />
+    <Compile Include="MsgL1sGetRsp.cs" />
+    <Compile Include="MsgSubGHz.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAutoSendSetup.resx">
+      <DependentUpon>FormAutoSendSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCloseShelter2.resx">
+      <DependentUpon>FormCloseShelter2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfirmOpenShelter.resx">
+      <DependentUpon>FormConfirmOpenShelter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfirmUpdateLocation.resx">
+      <DependentUpon>FormConfirmUpdateLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormImportQR.resx">
+      <DependentUpon>FormImportQR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModifyPersonalInfo.resx">
+      <DependentUpon>FormModifyPersonalInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOpenShelter2.resx">
+      <DependentUpon>FormOpenShelter2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditShelter.resx">
+      <DependentUpon>FormEditShelter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormImport.resx">
+      <DependentUpon>FormImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditPersonal.resx">
+      <DependentUpon>FormEditPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPersonalSendHistory.resx">
+      <DependentUpon>FormPersonalSendHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReceiveMessageView.resx">
+      <DependentUpon>FormReceiveMessageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistShelter.resx">
+      <DependentUpon>FormRegistShelter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSendShelterInfo.resx">
+      <DependentUpon>FormSendShelterInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormShelterInfo.resx">
+      <DependentUpon>FormShelterInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSubGHzConnectSettings.resx">
+      <DependentUpon>FormSubGHzConnectSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSubGhzConnectTest.resx">
+      <DependentUpon>FormSubGhzConnectTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSwitchShelter.resx">
+      <DependentUpon>FormSwitchShelter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTcpConnectSettings.resx">
+      <DependentUpon>FormTcpConnectSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTcpSetting.resx">
+      <DependentUpon>FormTcpSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTermStatus.resx">
+      <DependentUpon>FormTermStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateLocationInfo.resx">
+      <DependentUpon>FormUpdateLocationInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWait.resx">
+      <DependentUpon>FormWait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCloseShelter.resx">
+      <DependentUpon>FormCloseShelter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClearShelter.resx">
+      <DependentUpon>FormClearShelter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPersonalEntryHistory.resx">
+      <DependentUpon>FormPersonalEntryHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOpenShelter.resx">
+      <DependentUpon>FormOpenShelter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTotalizationSendHistory.resx">
+      <DependentUpon>FormTotalizationSendHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="FormCloseShelter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCloseShelter.Designer.cs">
+      <DependentUpon>FormCloseShelter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClearShelter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClearShelter.Designer.cs">
+      <DependentUpon>FormClearShelter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPersonalEntryHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPersonalEntryHistory.Designer.cs">
+      <DependentUpon>FormPersonalEntryHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOpenShelter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOpenShelter.Designer.cs">
+      <DependentUpon>FormOpenShelter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTotalizationSendHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTotalizationSendHistory.Designer.cs">
+      <DependentUpon>FormTotalizationSendHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Qcid.cs" />
+    <Compile Include="QzssConfig.cs" />
+    <Compile Include="RtnThread.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="ShelterConfig.cs" />
+    <Compile Include="SlotSubSlot.cs" />
+    <Compile Include="SubGHz.cs" />
+    <Compile Include="SubGHzConfig.cs" />
+    <Compile Include="SubGHzEquStat.cs" />
+    <Compile Include="SubGHzFwdReceiver.cs" />
+    <Compile Include="SubGHzL1sReceiver.cs" />
+    <Compile Include="SubGHzRtnThread.cs" />
+    <Compile Include="TcpConfig.cs" />
+    <Compile Include="TcpEquStat.cs" />
+    <Compile Include="TcpFwdReceiver.cs" />
+    <Compile Include="TcpL1sReceiver.cs" />
+    <Compile Include="TcpRtnThread.cs" />
+    <Compile Include="TcpThreadBase.cs" />
+    <Compile Include="ThreadBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="img\load.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows インストーラ 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /Y $(TargetDir)避難所管理.exe $(TargetDir)..\..\..\..\dist\避難所管理\ShelterInfoSystem\
+xcopy /Y $(TargetDir)QAnpiCtrlLib.dll $(TargetDir)..\..\..\..\dist\避難所管理\ShelterInfoSystem\</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

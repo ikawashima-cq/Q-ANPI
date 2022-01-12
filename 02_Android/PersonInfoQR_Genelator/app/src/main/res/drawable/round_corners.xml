@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- グレーの四角形を配置 -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#c2c2c2"/>
+            <corners android:radius="6dp" />
+        </shape>
+    </item>
+    <!-- 白い四角形を上記の四角形に重ねて配置。ただし、1dpだけ内側にずらす -->
+    <item
+        android:bottom="1dp"
+        android:left="1dp"
+        android:right="1dp"
+        android:top="1dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#ffffff"/>
+            <corners android:radius="6dp" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="shift-jis"?>
+<ShelterInfo>
+  <IPAddress>0.0.0.0</IPAddress>
+  <PortNo>50000</PortNo>
+  <TimeSync>60</TimeSync>
+  <UARTAckTimeout>4000</UARTAckTimeout>
+
+  <!-- 現在未使用 -->
+  <!-- 
+   <TermId>AAB</TermId>
+   <GID>AAB</GID>
+   <ShelterName>○○県○○市○○小学校</ShelterName>
+   <Lat>36.12345</Lat>
+   <Lon>139.12345</Lon>
+   -->
+  <!-- 現在未使用 -->
+</ShelterInfo>
